@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarClient | Download</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">☰</div>
+        <div id="menu" class="menu">
+            <a href="index.html">Home</a>
+            <a href="download.html">Download</a>
+            <a href="store.html">Store</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+
+    <section class="download">
+        <img src="Assets/logo.png" alt="SolarClient Logo" class="logo">
+        <h1>Download SolarClient</h1>
+        <p>Get the best Minecraft experience with our easy-to-use client!</p>
+        <a href="https://github.com/SolarClientMC-s/Launcher/raw/main/SolarLauncher1.0.0.exe" class="btn" onclick="showDownloadMessage()">Download for Windows</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SolarClient. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function showDownloadMessage() {
+            alert('Thanks for downloading! Your download will start shortly.');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolarClient | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="burger-menu">
+        <div class="burger-icon" onclick="toggleMenu()">☰</div>
+        <div id="menu" class="menu">
+            <a href="index.html">Home</a>
+            <a href="download.html">Download</a>
+            <a href="store.html">Store</a>
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+    </div>
+
+    <header class="main-header fade-in">
+        <h1>Welcome to SolarClient</h1>
+        <p>The ultimate Minecraft client for a seamless gaming experience.</p>
+        <a href="download.html" class="btn">Get Started</a>
+    </header>
+
+    <section class="features fade-in">
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div class="feature-item fade-in">
+                <h3>Performance Optimization</h3>
+                <p>Enjoy improved FPS and smoother gameplay.</p>
+            </div>
+            <div class="feature-item fade-in">
+                <h3>User-Friendly Interface</h3>
+                <p>Navigate easily with our intuitive design.</p>
+            </div>
+            <div class="feature-item fade-in">
+                <h3>Regular Updates</h3>
+                <p>Stay ahead with the latest features and fixes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="player-counter fade-in">
+        <h2>Live Players Online: <span id="playerCount">1,000</span></h2>
+        <button class="discord-btn fade-in" onclick="window.open('https://discord.gg/yourdiscordlink', '_blank')">Join the Discord Server</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SolarClient. All rights reserved. | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

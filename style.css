@@ -1,0 +1,181 @@
+/* General styles */
+body {
+    background-color: black; /* Black background */
+    color: white; /* White text color */
+    font-family: Arial, sans-serif; /* Font family */
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+/* Burger menu */
+.burger-menu {
+    position: fixed; /* Fixed position for burger menu */
+    top: 10px;
+    left: 10px;
+    z-index: 10; /* Ensure it stays above other content */
+}
+
+.burger-icon {
+    cursor: pointer; /* Pointer cursor for clickable icon */
+    font-size: 24px; /* Icon size */
+    color: white; /* Icon color */
+    transition: transform 0.3s; /* Smooth transformation */
+}
+
+.burger-icon:hover {
+    transform: rotate(90deg); /* Rotate on hover */
+}
+
+/* Download section */
+.download {
+    text-align: center; /* Center text */
+    margin: 50px; /* Margin around download section */
+}
+
+.logo {
+    max-width: 200px; /* Adjust the logo size as needed */
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    background-color: white; /* Button background */
+    color: black; /* Button text color */
+    padding: 15px 30px; /* Padding around button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition */
+}
+
+.btn:hover {
+    background-color: #f0f0f0; /* Light grey on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Header */
+.main-header {
+    text-align: center; /* Center header text */
+    padding: 50px 20px; /* Padding around header */
+}
+
+.main-header h1 {
+    font-size: 2.5em; /* Header size */
+    margin: 0; /* Remove default margin */
+}
+
+.main-header p {
+    font-size: 1.2em; /* Subheading size */
+}
+
+/* Features section */
+.features {
+    padding: 20px; /* Padding around features section */
+    text-align: center; /* Center text */
+}
+
+.feature-list {
+    display: flex; /* Flexbox for layout */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between items */
+    flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+.feature-item {
+    background-color: #333; /* Dark background for feature items */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside feature items */
+    width: 250px; /* Fixed width for items */
+    transition: transform 0.3s; /* Smooth transform on hover */
+}
+
+.feature-item:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Player Counter */
+.player-counter {
+    text-align: center; /* Center text */
+    margin: 40px 0; /* Margin around section */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.player-counter h2 {
+    font-size: 1.5em; /* Player counter size */
+}
+
+/* Discord Button */
+.discord-btn {
+    background-color: #7289DA; /* Discord Color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1em; /* Font size */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth background transition */
+}
+
+.discord-btn:hover {
+    background-color: #5B6EAE; /* Darker Discord Color on Hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Padding around footer */
+    background-color: #222; /* Dark background for footer */
+}
+
+/* Menu */
+.menu {
+    display: none; /* Hide menu by default */
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute; /* Absolute positioning */
+    background-color: #333; /* Dark background */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for depth */
+    padding: 10px; /* Padding inside menu */
+    top: 40px; /* Position below the burger icon */
+    left: 0; /* Align left */
+    animation: slideIn 0.3s ease; /* Slide-in animation for the menu */
+}
+
+.menu a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Padding around links */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.menu a:hover {
+    background-color: #444; /* Background color on hover */
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 1s forwards; /* Fade-in effect */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1; /* Fade to visible */
+    }
+}
+
+/* Slide-in animation for menu */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px); /* Slide from above */
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: translateY(0); /* End in place */
+        opacity: 1; /* Fade to visible */
+    }
+}
